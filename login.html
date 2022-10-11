@@ -7,6 +7,16 @@
     <title>Document</title>
     <link rel="stylesheet" media="screen" href="/css/bootstrap.min.css">
     <style>
+      form{
+        margin: 0 40rem 0 40rem ;
+        padding: 10px;
+        border-radius: 10px;
+
+        background-color: rgb(91, 139, 252);
+      }
+      .form-floating{
+        padding: 10px 0 10px 0;
+      }
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -61,29 +71,20 @@
     </style>
 </head>
 <body>
-    <main class="form-signin w-100 m-auto">
+    <div class="form-signin w-100 m-auto">
       <a href="/">HOME</a>
         <form>
-          <img class="mb-4" src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-          <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+          <h1 class="h3 mb-3 fw-normal">Please Choose a file</h1>
       
           <div class="form-floating">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Email address</label>
+            <input class="form-control" type="text" id="floatingInput">
+            <label for="floatingInput">File Name</label>
           </div>
-          <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-            <label for="floatingPassword">Password</label>
-          </div>
-      
-          <div class="checkbox mb-3">
-            <label>
-              <input type="checkbox" value="remember-me"> Remember me
-            </label>
-          </div>
-          <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-          <p class="mt-5 mb-3 text-muted">© 2017–2022</p>
+          <button class="w-100 btn btn-lg btn-primary" id="btn" type="button">Sign in</button>
         </form>
-      </main>
+      </div>
+      <div id="text"></div><br><br>
+      <div id="info"></div>
+      <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
